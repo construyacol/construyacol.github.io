@@ -93,24 +93,28 @@ position: relative;
 #maquina{
 			position: absolute;
 			top: 90px;
-			animation: animationIn 1s forwards;
-			padding: 2em;
-			border-radius: .5em;
+			animation: animationIn 10s infinite;
 			}
 
-			@keyframes animationOut{
+			@keyframes animationIn{
 
 				0%{
-
+					transform: translateY(-10px);
+				}
+				20%{
+					transform: translateY(0px);
+				}				
+				40%{
+					transform: translateY(10px);
 				}
 				60%{
 					transform: translateY(-10px);
 				}
-				75%{
-					transform: translateY(25px);
+				80%{
+					transform: translateY(10px);
 				}
 				100%{
-					transform: translateY(-3000px);
+					transform: translateY(-10px);
 				}
 			}
 
