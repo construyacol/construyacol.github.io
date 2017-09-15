@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html class="fuente">
+<head>
+	<title></title>
+</head>
+
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/css/uikit.min.css" />
+
+<!-- jQuery is required -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<body>
+<style>
+
+.fuente{font-family: 'Ubuntu', sans-serif;}
+
+
+
+
+
+
+	
+            a:link, a:visited{
+                color: white ;
+                text-decoration: none !important;
+            }
+
+
+
+#contenedorGlobal{
+width: 100%;
+height: 100%;	
+position: relative;	
+}
+.seccion{
+	height: 600px;
+	width: 100%;
+}
+
+.seccionmin{
+	height: 240px;
+	width: 100%;
+	display: flex;
+}
+.portada{
+	background-image: url("assets/portada.png");
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	    background-attachment: fixed;
+}
+#sec1{
+	clip-path: polygon(0 0, 100% 0, 100% 50%,0 100%);
+}
+#menu{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	z-index: 999;
+	transition: .3s;
+	/*border: 1px solid red;*/
+}
+#items{
+	display: flex;
+	justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    transition: .2s;
+    position: relative;
+
+}
+.item{
+	margin: 5px 10px;
+	font-size: 14px !important;
+}
+.absoluto{
+	position: absolute;
+}
+.principal{
+	/*border: 1px solid red;*/
+}
+.medio{
+	width: 50%;
+	height: 600px;
+	/*border: 1px solid yellow;*/
+	position: relative;
+}
+#maquina{
+			position: absolute;
+			top: 90px;
+			animation: animationIn 1s forwards;
+			padding: 2em;
+			border-radius: .5em;
+			}
+
+			@keyframes animationOut{
+
+				0%{
+
+				}
+				60%{
+					transform: translateY(-10px);
+				}
+				75%{
+					transform: translateY(25px);
+				}
+				100%{
+					transform: translateY(-3000px);
+				}
+			}
+
+
+.machi{
+	position: relative;
+}
+#logo{
+	width: 72px;
+	height: 72px;
+	background-image: url("assets/logo.png");
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	transition: .5s;
+}
+.enlinea{
+	display: flex;
+}
+
+#logotipo{
+	position: absolute;
+	flex-direction: column;
+	left: 50px;
+	transition: .3s;
+	top:60px;
+	align-items: center;
+	z-index: 20;
+}
+
+#texto{
+text-align: center;
+color: white;
+font-size: 30px;
+}
+.cont-sc1{
+	width: 100%;
+	height: 67%;
+	/*background: black;*/
+	color: white;
+}
+.abajo{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.titular{
+	font-size: 30px;
+}
+.margenti{
+	margin: 15px 0 15px 40px;
+}
+#cta{
+	width: 180px;
+	height: 40px;
+	background: white;
+	color: #f56a49;
+	border-radius: 17px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-top: 50px;
+}
+.titulo, .tituloi{
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+}
+.tituloi{
+	text-align: left !important;
+	font-style: italic;
+}
+.contenedor{
+	width: 100%;
+	height: 100%;
+}
+.sector{
+	height: 100%;
+}
+.uno{
+	width: 30%;
+}
+.dos{
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#machinep{
+	background-image: url("assets/machinep.png");
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td, th {
+    /*border: 1px solid #dddddd;*/
+    text-align: left;
+    padding: 8px;
+}
+td{
+	width: 100%;
+	color: #91DC59;
+	font-size: 14px;
+}
+tr{
+	height: 65px;
+}
+tr:nth-child(even) {
+    background-color: #F3F3F3;
+}
+.chulo{
+	background-image: url("assets/chulo.png");
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	height:33px;
+	width: 33px;
+}
+.chul{
+	width: 60px;
+	display: flex;
+	justify-content: center;
+	height: 65px;
+	align-items: center;
+}
+#comoFunciona{
+	height: 250px;
+	width: 100%;
+	clip-path: polygon(0 5%, 45% 5%, 50% 0, 55% 5%, 100% 5%, 100% 100%, 0% 99%);
+
+}
+.forma{
+	width: 100%;
+	height: 100%;
+	/*clip-path: polygon(0 100%, 0 10%, 45% 10%, 50% 0, 55% 10, 100% 10, 100% 100%);*/
+
+/*	background: rgba(23,54,89,1);
+background: -moz-linear-gradient(-45deg, rgba(23,54,89,1) 0%, rgba(23,54,89,1) 31%, rgba(20,30,48,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(23,54,89,1)), color-stop(31%, rgba(23,54,89,1)), color-stop(100%, rgba(20,30,48,1)));
+background: -webkit-linear-gradient(-45deg, rgba(23,54,89,1) 0%, rgba(23,54,89,1) 31%, rgba(20,30,48,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(23,54,89,1) 0%, rgba(23,54,89,1) 31%, rgba(20,30,48,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(23,54,89,1) 0%, rgba(23,54,89,1) 31%, rgba(20,30,48,1) 100%);
+background: linear-gradient(135deg, rgba(23,54,89,1) 0%, rgba(23,54,89,1) 31%, rgba(20,30,48,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#173659', endColorstr='#141e30', GradientType=1 );
+*/
+	display: flex;
+	align-items: center;
+    padding-top: 20px;
+
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-image: url("assets/fon.jpg");
+	background-attachment: fixed;
+
+}
+.paso{
+	width: 33%;
+	height: 90%;
+	    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.blanco{
+	color: white;
+	font-size: 20px !important;
+}
+.imgcf1, .imgcf2, .imgcf3{
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	width: 75px;
+	height: 75px;
+}
+.imgcf1{
+	background-image: url("assets/paso1.png");
+}
+.imgcf2{
+	background-image: url("assets/paso2.png");
+}
+.imgcf3{
+	background-image: url("assets/paso3.png");
+}
+.descf{
+	color: white;
+	font-size: 14px;
+	padding: 0 50px;
+	text-align: center;
+	height: 80px;
+}
+.opino{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	/*margin-top: 80px;*/
+	background:#F1F1F1;
+}
+.coment{
+	width: 600px;
+	height: 160px;
+	background: #D2D2D2;
+	border-radius: 10px;
+	position: relative;
+	margin: 40px 0;
+	display: flex;
+	align-items: center;
+}
+.foto{
+	height: 100%;
+	width: 25%;
+	/*background: red;*/
+	border-radius: 50%;
+	position: absolute;
+	border: 5px solid white;
+	top: -5px;
+	left: -60px;
+}
+.arribamar{
+	margin: 30px 0;
+}
+.contents{
+	height: 100%;
+	width: 80%;
+	/*background: black;*/
+}
+.descu{
+	font-size: 14px !important;
+	padding: 0 10px 0 25px;	
+}
+
+.opina{
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.p1{
+	background-image: url("assets/p1.jpg");
+}
+.p2{
+	background-image: url("assets/p2.jpg");
+}
+.p1, .p2, .mapa, .memberpic, .fb, .tw, .lkn, .fondos{
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+
+
+
+
+
+.otro{
+	margin: 30px 0;
+}
+.fondo{
+	background: rgba(23,54,89,1);
+background: -moz-linear-gradient(-45deg, rgba(23,54,89,1) 0%, rgba(23,54,89,1) 31%, rgba(20,30,48,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(23,54,89,1)), color-stop(31%, rgba(23,54,89,1)), color-stop(100%, rgba(20,30,48,1)));
+background: -webkit-linear-gradient(-45deg, rgba(23,54,89,1) 0%, rgba(23,54,89,1) 31%, rgba(20,30,48,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(23,54,89,1) 0%, rgba(23,54,89,1) 31%, rgba(20,30,48,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(23,54,89,1) 0%, rgba(23,54,89,1) 31%, rgba(20,30,48,1) 100%);
+background: linear-gradient(135deg, rgba(23,54,89,1) 0%, rgba(23,54,89,1) 31%, rgba(20,30,48,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#173659', endColorstr='#141e30', GradientType=1 );
+position: relative;
+}
+
+.mapa{
+background-image: url("assets/mapa.png");
+width: 450px;
+height: 240px;
+/*opacity: 0.05;*/
+position: absolute;
+}
+
+.medio1{
+	width: 50%;
+	height: 100%;
+}
+.subti, .subti2{
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	margin: 20px 0;
+}
+.subti2{
+	font-size: 14px !important;
+	margin: 0 !important;
+}
+#incu{
+	position: absolute;
+	left: 60px;
+	transition: .2s;
+	opacity: 0;
+}
+</style>
+
+<div id="contenedorGlobal">
+<div id="menu">
+	<div id="logotipo" class="enlinea">
+		<div id="logo" class="absosluto"></div>
+		<div id="texto" >IncuEggs</div>
+	</div>
+	<div id="items">
+	<p id="incu">IncuEggs</p>
+		<a href="#" class="item">¿Que es?</a>
+		<a href="#" class="item">Beneficios</a>
+		<a href="#" class="item">¿Como funciona?</a>
+		<a href="#" class="item">Nos prefieren</a>
+		<a href="#" class="item">Nuestro equipo</a>
+		<a href="#" class="item">Contáctanos</a>
+		<div class="subcm tocar" onclick="conectarme();">
+        	<a   class="botoncito button cmenu" uk-toggle="target: #modal-close-default">Conectarme YA</a>
+        </div>
+	</div>
+</div>
+
+	<!-- <div> -->
+		<div id="sec1" class="absolutos">
+			<div class="seccion portada"></div>
+		</div>
+	<!-- </div> -->
+	<div class="absoluto seccion principal" style="top:0; display: flex;">
+
+		<div class="medio abajo">
+			<div class="cont-sc1">
+				<div class="titular margenti">El futuro de la automatización avicola</div>
+				<div class="descripcion margenti">Aportamos soluciones a todo el sector avícola, en la producción de todo tipo de aves de corral o silvestres</div>
+				<div id="cta" class="margenti">¡Adquierela Ahora!</div>
+			</div>
+		</div>
+
+	<div class="medio machi"> <img src="assets/machine.png" id="maquina"></div>
+	</div>
+
+
+
+
+	<div class="seccion">
+		<p class="titulo">¿Por qué IncuEggs</p>
+		<div class="contenedor enlinea">
+			<div class="sector uno" id="machinep"></div>
+			<div class="sector dos"> 
+				<table>
+
+  <tr>
+    <td class="chul"><div class="chulo"></div></td>
+    <td>Automatización de todo el proceso de incubación</td>
+  </tr>
+  <tr>
+    <td class="chul"><div class="chulo"></div></td>
+    <td>Control y seguimiento en tiempo real desde cualquier parte del mundo</td>
+  </tr>
+  <tr>
+    <td class="chul"><div class="chulo"></div></td>
+    <td>Aumenta +25% el nivel de producción</td>
+  </tr>
+  <tr>
+    <td class="chul"><div class="chulo"></div></td>
+    <td>Reduce costos operativos</td>
+  </tr>
+  <tr>
+    <td class="chul"><div class="chulo"></div></td>
+    <td>Más amigable con el medio ambiente</td>
+  </tr>
+  <tr>
+    <td class="chul"><div class="chulo"></div></td>
+    <td>Costo mas competitivo del mercado</td>
+  </tr>
+   <tr>
+    <td class="chul"><div class="chulo"></div></td>
+    <td>Soporte 24/7</td>
+  </tr>
+</table>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="titulo otro" style="margin-top: 100px;">¿Como funciona?</div>
+
+
+	<div id="comoFunciona">
+		<div class="forma">
+			<div class="paso">
+				<div class="titulo  blanco">Crea tu granja</div>
+				<div class="imgcf1"></div>
+				<div class="descf">Añade y personaliza tus incubadoras, planificamos contigo el futuro crecimiento de tu negocio</div>
+			</div>
+			<div class="paso">
+				<div class="titulo  blanco">Te contactámos</div>
+				<div class="imgcf2"></div>
+				<div class="descf">Te brindamos acompañamiento  y formación en todo el proceso </div>
+			</div>
+			<div class="paso">
+				<div class="titulo blanco ">Monitorea</div>
+				<div class="imgcf3"></div>
+				<div class="descf">Desde cualquier parte del mundo en tiempo real el estado de tus incubadoras</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="seccion opino">
+
+<div class="titulo arribamar">¿Por qué nuestros usuarios nos prefieren?</div>
+
+	<div class="coment">
+		<div class="foto p1"></div>
+		<div class="opina">
+			<div class="contents tituloi">Nombre - Profesión</div>
+			<div class="contents descu">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.</div>
+
+		</div>
+	</div>
+
+	<div class="coment">
+		<div class="foto p2"></div>
+		<div class="opina">
+			<div class="contents tituloi">Nombre - Profesión</div>
+			<div class="contents descu">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.</div>
+
+		</div>
+	</div>
+
+</div>
+
+
+<style>
+	.formulario{
+		height: 50px;
+		width: 100%;
+		display: flex;
+		margin: 40px 0;
+		justify-content: center;
+	}
+	#correo1, .correo1{
+		width: 260px;
+		padding: 0 15px;
+	}
+	.btn{
+		width: 80px;
+	}
+</style>
+
+<div class="seccionmin fondo"> 
+	<div class="mapa"></div>
+	<div class="medio1"></div>
+	<div class="medio1">
+		<div class="subti">¿Quieres mas información?</div>
+		<div class="subti2">Te contáctaremos en breve</div>
+		<div class="formulario">
+			<input type="text" name="" placeholder="Correo Electronico" id="correo1">
+			<input type="submit" name="" value="Enviar" class="btn">
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+	<style>
+	.member{
+		background: #F1F1F1;
+		width: 300px;
+		height: 400px;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		    align-items: flex-end;
+		    position: relative;
+	}
+
+	#contentMembers{
+	  width: 100%;
+	  height: 100%;
+	  display: flex;
+	  justify-content: space-around;
+	  padding-top: 20px;
+	}
+	.memberpic{
+	background-image: url("assets/traje.png");
+	width: 80%;
+	height: 95%;
+	}
+	.social{
+		width: 40px;
+		height: 40px;
+		/*background: blue;*/
+		border-radius: 50%;
+		margin: 0 5px;
+	}
+	.contenedorSocial{
+		width: 150px;
+		height: 40px;
+		position: absolute;
+		display: flex;
+		bottom: -20px;
+	}
+	.conteMember{
+		display: flex;
+		flex-direction: column;
+
+	}
+	.infoMember{
+		margin-top: 20px;
+	}
+	.fb{
+	background-image: url("assets/facebook.png");
+	}
+	.tw{
+	background-image: url("assets/gorjeo.png");
+	}
+	.lkn{
+	background-image: url("assets/linkedin.png");
+	}
+	.membertag1{
+		font-size: 16px !important;
+		font-style: italic;
+	}
+
+		
+	</style>
+		<div class="titulo arribamar">Nuestro Equipo</div>
+
+	<div class="seccion">
+
+		<div id="contentMembers">
+			<div class="conteMember">
+				<div class="member"><div class="memberpic"></div> 
+					<div class="contenedorSocial">
+						<div class="social fb "></div>
+						<div class="social tw"></div>
+						<div class="social lkn"></div>
+					</div> 
+				</div>
+				<div class="infoMember">
+					<div class="titulo membertag">Nombre</div>
+					<div class="titulo membertag1">Cargo</div>
+
+				</div>
+			</div>
+
+						<div class="conteMember">
+				<div class="member"><div class="memberpic"></div> 
+					<div class="contenedorSocial">
+						<div class="social fb "></div>
+						<div class="social tw"></div>
+						<div class="social lkn"></div>
+					</div> 
+				</div>
+				<div class="infoMember">
+					<div class="titulo membertag">Nombre</div>
+					<div class="titulo membertag1">Cargo</div>
+
+				</div>
+			</div>
+
+
+						<div class="conteMember">
+				<div class="member"><div class="memberpic"></div> 
+					<div class="contenedorSocial">
+						<div class="social fb "></div>
+						<div class="social tw"></div>
+						<div class="social lkn"></div>
+					</div> 
+				</div>
+				<div class="infoMember">
+					<div class="titulo membertag">Nombre</div>
+					<div class="titulo membertag1">Cargo</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+<style>
+.footer{
+
+width: 100%;
+height: 450px;
+position: relative;
+}
+.fondos{
+background-image: url("assets/footer.jpg");
+width: 100%;
+height: 100%;
+background-attachment: fixed;
+position: absolute;
+-webkit-clip-path: polygon(0% 0%, 100% 52%, 100% 100%, 0 100%);
+clip-path: polygon(0% 0%, 100% 52%, 100% 100%, 0 100%);
+z-index: 1;
+padding-bottom: 20px;
+}
+.secFoot{
+	width: 33%;
+	height: 100%;
+	/*background: red;*/
+	z-index: 500;
+	/*position: absolute;*/
+}
+.contfoot{
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: space-around;
+}
+.formu{
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.btn2{
+	/*border-radius: 5px !important;*/
+	/*width: 350px !important;*/
+	margin-top: 20px;
+	height: 20px;
+}
+.enviar{
+	height: 40px;
+}
+.cont{
+	color: white !important;
+}
+.nue{
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: center;
+	/*align-items: center;*/
+}
+.continf, .doss{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	text-align: left;
+
+}
+.continf{
+		padding-bottom: 100px;
+}
+.doss
+{
+		padding-bottom: 80px;
+}
+.centro{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+}
+span{
+	width: 100%;
+	margin-top: 20px;
+}
+#mapita{
+	width: 100% !important;
+}
+</style>
+
+<div class="footer">
+<div class="fondos"></div>
+
+
+<div class="contfoot">
+<div class="secFoot nue">
+	<div class="formu">
+	<div class="titulo cont">Contáctanos</div>	
+
+		<input type="text" name="" placeholder="Nombre" class="btn2">
+		<input type="text" name="" placeholder="Correo Electrónico" class="btn2">
+		​<textarea id="txtArea" rows="10" cols="70" placeholder="Mensaje"></textarea>
+		<input type="submit" name="" value="Enviar" class="enviar">
+	</div>
+</div>
+<div class="secFoot centro">
+	<div class="continf">
+		<span>Redes sociales</span>
+		<span>Correo Electrónico</span>
+		<span>Formulario de contacto</span>
+	</div>
+
+</div>
+<div class="secFoot centro">
+	<div class="doss">
+		<span>Item1</span>
+		<span>Item2</span>
+		<span>Item3</span>
+	</div>
+
+</div>
+</div>
+
+</div>
+<div class="mapita">
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6226.787324621815!2d-76.19520256267205!3d4.08414015955064!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sco!4v1505408264934" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+
+<style>
+
+
+.texcom, .texcom2 {
+    margin: 0;
+    transition: .3s;
+    font-weight: normal;
+    color: white !important;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
+.registro {
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    color: white;
+    text-align: center;
+    padding-top: 10PX;
+    margin-bottom: 20px;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+
+.cnct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conectar, .conectar2 {
+    border-radius: 5px;
+    background-color: #27AE61;
+    border: none;
+    color: white;
+    font-size: 22px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-family: 'Cabin', sans-serif;
+    transition: .2s;
+    -webkit-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    -moz-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+}
+.iconocorreo {
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: normal;
+    color: white;
+}
+.form-group2 {
+    width: 350px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    border-color: white;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
+#divCorreo {
+    transition: .3s;
+}
+
+.correoL {
+    padding-left: 15px;
+    width: 300px;
+    height: 37px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 10px;
+    outline: none;
+    border-width: 0;
+    color: white;
+}
+
+.iconocorreo {
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: normal;
+    color: white;
+}
+
+.form-group2 {
+    width: 350px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    border-color: white;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
+.display {
+    opacity: 1;
+    display: none;
+    transition: .3s;
+}
+.zoomin {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.window-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    text-align: left;
+    z-index: 0;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+    opacity: 1;
+}
+.ingresarPer {
+    width: 100px !important;
+    height: 150px !important;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.infile {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-image: url(admin/assets/imagenes/fotodeperfil.jpg);
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+#regPerfil {
+    transform: scale(0.1,0.1);
+    opacity: 0;
+    transition: .2s;
+    display: none;
+    box-shadow: none !important;
+}
+
+
+#regPerfil {
+    transform: scale(0.1,0.1);
+    opacity: 0;
+    transition: .2s;
+    display: none;
+    -webkit-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    -moz-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+}
+
+.hola {
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 35px;
+}
+
+#holab {
+    transform: scale(0.1,0.1);
+    opacity: 0;
+    transition: .3s;
+}
+.cuerpomodal {
+    background: transparent !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 400px;
+    padding: 0;
+}
+
+#iconocorreo2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 15px 20px 0 0;
+    transition: .4s;
+}
+.cerrar2 {
+    padding: 3px !important;
+    border-radius: 5px !important;
+    background: #384b52 !important;
+    color: white !important;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+
+
+
+#iconocorreo2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 15px 20px 0 0;
+    transition: .4s;
+}
+
+.close {
+    cursor: pointer;
+}
+
+label {
+    color: white;
+}
+
+.formularioLogin{
+    /*margin-top: 50px !important;*/
+    width: 390px !important;
+    height: 480px !important;
+    border-radius: 10px;
+    z-index: 900000;
+
+}
+	#windowb{
+
+background: rgba(252,143,80,1);
+background: -moz-linear-gradient(-45deg, rgba(252,143,80,1) 0%, rgba(252,143,80,1) 18%, rgba(247,114,56,1) 45%, rgba(242,80,27,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(252,143,80,1)), color-stop(18%, rgba(252,143,80,1)), color-stop(45%, rgba(247,114,56,1)), color-stop(100%, rgba(242,80,27,1)));
+background: -webkit-linear-gradient(-45deg, rgba(252,143,80,1) 0%, rgba(252,143,80,1) 18%, rgba(247,114,56,1) 45%, rgba(242,80,27,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(252,143,80,1) 0%, rgba(252,143,80,1) 18%, rgba(247,114,56,1) 45%, rgba(242,80,27,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(252,143,80,1) 0%, rgba(252,143,80,1) 18%, rgba(247,114,56,1) 45%, rgba(242,80,27,1) 100%);
+background: linear-gradient(135deg, rgba(252,143,80,1) 0%, rgba(252,143,80,1) 18%, rgba(247,114,56,1) 45%, rgba(242,80,27,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc8f50', endColorstr='#f2501b', GradientType=1 );
+
+
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+
+}
+
+            a, a:hover, a:link, a:active, a:visited{
+                color: white ;
+                text-decoration: none ;
+            }
+
+
+            .correoL::-webkit-input-placeholder { color: #E1E3E8; font-weight :normal; };
+.correoL:-moz-placeholder { color: red; font-weight: bold; }
+.correoL::-moz-placeholder { color: red; font-weight: bold; }
+.correoL:-ms-input-placeholder { color: red; font-weight: bold; }
+
+.cmenu{
+    width: auto;
+     text-decoration: none;
+     scolor: #A5D650;
+    display: flex;
+    justify-content: center;
+    
+    transition: .3s;
+    transform: translateX(0px);
+    
+}
+.subcm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2.5px solid #27AE61;
+    border-radius: 5px;
+    height: 38px;
+    top: 0px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0 30px;
+    list-style: none;
+    width: 180px;
+    cursor: pointer;
+    transition: .2s;
+    background: #27AE61;
+}
+
+.tocar{
+           
+        
+            animation-name: logo;
+            animation-delay: 3s;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            animation-timing-function: steps(1500);
+
+
+
+        }
+
+                @keyframes logo{
+            0%{
+                transform: rotate(0deg);
+
+            }
+
+            1%{
+                transform: rotate(2deg);
+            }
+            
+            2%{
+                transform: rotate(-2deg);
+                
+            }
+            3%{
+                transform: rotate(0deg);
+
+            }
+
+            4%{
+                transform: rotate(2deg);
+            }
+            
+            5%{
+                transform: rotate(-2deg);
+                
+            }
+            6%{
+                transform: rotate(0deg);
+                
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+            
+
+        }
+</style>
+
+<div id="ModalSession">
+	
+       <div id="modal-close-default" uk-modal>
+                <!-- <button class="" type="button" ></button> -->
+
+            <div class="uk-modal-dialog uk-modal-body cuerpomodal">
+                    <div class="formularioLogin" id="windowb">
+
+                        <div id="cerrar2" class="cerrar"  style="z-index: 5;">
+                            <label  class="close" id="iconocorreo2"><span class=" cerrar2 uk-modal-close-default" >X</label>
+                        </div> 
+
+                        <div style="margin-bottom: 10px;" id="holab">
+                            <h1 class="hola">¡Hola!<br> Bienvenido</h1>
+                        </div>
+
+                       
+                        <div style="position: relative;" id="regPerfil">
+                            <input type="" class="infile" id="uimg2" value="" style="display: none"/>
+                            <div class="infile ingresarPer" id="regPerfil2" style="width: 100px; height: 100px !important;">
+                                <input type="file" class="infile"  style="display: none;">
+                            </div>
+                        </div>
+
+                        <div class="window-container zoomin" >
+
+                        <div id="divCorreo2" class="div-correo" style="display: none; color: orange; margin:15px 0; width: 350px; text-align: center;">  <span class="icon-warning" style="font-size: 23px"></span>
+                                Ups!, al parecer el correo ya se encuentra registrado o no has llenado todos los campos debidamente. Vuelve a intentarlo :).
+                            </div>
+                                <input id="identificador" type="text" placeholder="id" class="display"> 
+
+                            <div class="form-group2 nombre display">
+                                <label class="iconocorreo "><span class="icon-person_add"></label>
+                                <input class="correoL " id="nombre" type="text" placeholder="Nombre"> 
+                            </div>
+
+                            <br/>
+                            
+                            <div id="divCorreo" class="div-correo display" style="color: orange; margin:15px 0; width: 350px; text-align: center;"><span class="icon-warning" style="font-size: 23px"></span>
+                                ¡Ups!, has escrito mal el usuario o la constraseña. Vuelve a intentarlo :). 
+                            </div>
+                            <div class="form-group2">
+                                <label class="iconocorreo">
+                                <span class="icon-mail_outline"></label> 
+
+                                <input type="text"  name="email"  id="usuario"  required class="correoL correo" placeholder="Correo electronico" />
+
+                            </div>
+                            
+                            <br/>
+
+                            <div class="form-group2 ">
+                                <label class="iconocorreo">
+                                <span class="icon-lock"></label>
+                                <input type="password" name="pass" id="pass"   placeholder="Contraseña" required class="correoL contraseña " />
+
+                               
+                            </div>
+
+                            <br/>
+                            <div class="cnct2">
+                            <a id="go" name="go" class="conectar cnct" onclick="login();">
+
+                                <!-- <span class="avion icon-flight"></span> -->
+
+                                <h4 class="texcom">Iniciar sesión</h4>
+                            </a>
+                            </div>
+
+                            
+
+                            <a id="registra" class="conectar registra display" onclick="registrar();">
+                                <span class="avion icon-flight"></span>
+                                <h4 class="texcom2">Registrarme</h4>
+                            </a>
+                            <br/>
+
+                           
+
+                            <div class="registro">
+                                <a class="nuevo">Eres nuevo aquí?</a> 
+                                <a class="cuenta display">Ya tienes una cuenta?</a> 
+
+                                <br>
+
+                                <a class="registrame" style="color: #27AE61; cursor: pointer; background: rgba(0,0,0,0.2);" onclick="registrarme();">  
+                                  ¡REGÍSTRATE!
+                                </a>
+
+
+                                <a class="conectame display" style="color: #27AE61; cursor: pointer; background: rgba(0,0,0,0.2); " onclick="conectarme();"> ¡CONÉCTATE!</a>
+                            </div>
+                        </div>
+                    </div> 
+            </div>
+        </div>
+
+
+</div>
+<script>
+
+                  var alturas=20;
+                  
+                $(window).on("scroll",function(){
+                  if($(window).scrollTop()>alturas){
+                  	// alert(">20px");
+                    $("#logotipo").css("top", "5px");
+                    $("#logotipo").css("left", "0px");
+                    $("#logo").css("height", "40px");
+                    $("#logo").css("width", "40px");
+                    $("#items").css("background", "white");
+                    $("#texto").css("opacity", "0");
+                    $(".item").css("color", "#888888");
+                    $("#menu").css("box-shadow", "0px 4px 21px -8px rgba(0,0,0,0.53)");
+                    $("#incu").css("left", "90px");
+                    $("#incu").css("opacity", "1");
+
+
+                    // $("#tabs").addClass("sombra");
+
+                  } else{
+                  	// alert("<20px");
+                    $(".item").css("color", "white");
+                    $("#menu").css("box-shadow", "0px 0px  0px  0px rgba(0,0,0,0.0)");
+
+                    $("#incu").css("left", "60px");
+                    $("#incu").css("opacity", "0");
+
+                    $("#logotipo").css("top", "66px");
+                    $("#logotipo").css("left", "50px");
+                    $("#logo").css("height", "70px");
+                    $("#logo").css("width", "70px");
+                    $("#items").css("background", "transparent");
+                    $("#texto").css("opacity", "1");
+    
+
+
+                     // $("#RentAqui2").css("margin-right", "50%");
+                  }
+                });  
+
+
+            function registrarme(){
+        
+
+        var reg=$(".nombre");
+        if (reg.hasClass('display')) {
+          // alert("si la tiene");
+             $("#regPerfil").css("display","initial");
+                setTimeout(function(){
+             $("#regPerfil").css("transform","scale(1,1)");
+             $("#regPerfil").css("opacity","1");
+
+               }, 300);
+
+             $(".cnct2").toggleClass("display");
+             $(".nombre").toggleClass("display");
+             $(".registrame").toggleClass("display");
+             $(".registra").toggleClass("display");
+             $(".conectame").toggleClass("display");
+             $(".cuenta").toggleClass("display");
+            $(".nuevo").toggleClass("display");
+            $("#holab ").css("transform","scale(0.1,0.1)");
+             $("#holab ").css("opacity","0");
+             setTimeout(function(){
+             $("#holab ").css("display","none");
+
+               }, 300);
+        } else { 
+
+            }
+
+      }
+
+            function conectarme(){
+               var reg=$(".nombre");
+          if (reg.hasClass('display')) {
+
+
+             $("#holab ").css("display","initial");
+             setTimeout(function(){
+             $("#holab ").css("transform","scale(1,1)");
+             $("#holab ").css("opacity","1");
+               }, 300);
+              
+          }else{
+          setTimeout(function(){
+             $("#regPerfil").css("display","none");
+
+            $("#holab ").css("display","initial");
+ }, 300);
+
+             setTimeout(function(){
+             $("#holab ").css("transform","scale(1,1)");
+             $("#holab ").css("opacity","1");
+
+
+               }, 400);
+              // alert("no la tiene")
+             // $("#regPerfil ").css("display","none");
+             $("#regPerfil").css("transform","scale(0.1,0.1)");
+             $("#regPerfil").css("opacity","0");
+             
+             $(".nombre").toggleClass("display");
+             $(".registrame").toggleClass("display");
+             $(".registra").toggleClass("display");
+             $(".cnct2").toggleClass("display");
+             $(".conectame").toggleClass("display");
+             $(".cuenta").toggleClass("display");
+              $(".nuevo").toggleClass("display");
+               }
+      }
+</script>
+</body>
+</html>
